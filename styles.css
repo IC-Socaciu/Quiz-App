@@ -9,11 +9,11 @@ h1 {
   text-align: center;
   position: static;
 }
-.bookmarked-question-card {
+.question-card {
   border: 3px solid black;
   margin: 20px 0;
   width: 90%;
-  padding: 10% 5%;
+  padding: 10% 5px;
   scroll-margin-top: 100px;
   position: relative;
   left: 15px;
@@ -25,7 +25,7 @@ section {
 .question {
   text-align: center;
 }
-.card-bookmark {
+.fa-bookmark {
   font-size: 2em;
   padding: 5px 20px;
   background-color: transparent;
@@ -33,4 +33,43 @@ section {
   position: absolute;
   top: -23px;
   right: -10px;
+}
+.show-answer-btn {
+  align-content: center;
+  position: relative;
+  border: 2px solid black;
+}
+.question-card {
+  border: 3px solid black;
+  margin: 20px 0;
+  width: 90%;
+  padding: 10% 5%;
+  scroll-margin-top: 100px;
+  position: relative;
+  left: 15px;
+}
+button {
+  position: relative;
+  left: 22vw;
+}
+.category-tags {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.category__tag--html {
+  position: absolute;
+  left: 0;
+  background-color: rgb(197, 194, 194);
+}
+.category__tag--flexbox {
+  background-color: rgb(197, 194, 194);
+  position: absolute;
+  left: 45px;
+}
+.category__tag--css {
+  background-color: rgb(197, 194, 194);
+  position: absolute;
+  left: 110px;
 }
