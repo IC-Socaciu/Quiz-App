@@ -1,0 +1,17 @@
+#some-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-hack-content {
+  display: none;
+}
+
+#some-checkbox:checked ~ .checkbox-hack-content {
+  display: block;
+}
+.show-answer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
