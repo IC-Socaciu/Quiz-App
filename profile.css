@@ -1,79 +1,158 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-.header {
-  border: 3px solid black;
-  background-color: rgb(155, 253, 178);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: serif;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  padding: 16px;
+  width: min(300px, 100%);
+  margin: 0 auto;
+}
+.card {
+  background-image: linear-gradient(40deg, #129631 0%, #07e0ec 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.2rem;
+  color: white;
+  margin: 10px;
+}
+
+.card-headline {
+  position: fixed;
+  margin: 0;
+}
+.hidden {
+  visibility: hidden;
+}
+.header {
+  position: sticky;
+  background-image: linear-gradient(20deg, #129631 0%, #07e0ec 100%);
+  color: white;
+  height: 80px;
+  padding: 0px;
+  z-index: 2;
+}
+
 h1 {
   text-align: center;
-  position: static;
+  color: white;
+  line-height: 1.4;
+  margin: 0;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  padding-block: 16px;
 }
-.question-card {
-  border: 3px solid black;
-  margin: 20px 0;
-  width: 90%;
-  padding: 10% 5px;
+.card__question {
+  width: 100%;
+  padding: 10% 0;
   scroll-margin-top: 100px;
   position: relative;
   left: 15px;
-  background-color: rgb(155, 253, 178);
 }
 
-.image-section {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  overflow: hidden;
+.fa-bookmark {
+  font-size: 2em;
+  padding: 5px 20px;
   background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 32px;
+  right: 10px;
 }
-img {
-  width: 250px;
-  height: 250px;
-  border: 4px solid transparent;
-  border-radius: 50%;
-  padding: 10px;
-}
-.question {
-  text-align: center;
+.fa-bookmark-s {
+  font-size: 2em;
+  padding: 5px 20px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 225px;
+  right: 10px;
 }
 
-.show-answer-btn {
-  align-content: center;
-  position: relative;
-  border: 2px solid black;
-}
-.question-card {
-  border: 3px solid black;
-  margin: 20px 0;
-  width: 90%;
-  padding: 10% 5%;
-  scroll-margin-top: 100px;
-  position: relative;
-  left: 15px;
-}
-button {
-  position: relative;
-  left: 22vw;
-}
 .category-tags {
+  position: absolute;
   list-style-type: none;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+  color: #8413b9;
+}
+.category__tag--games {
+  position: absolute;
+  bottom: -2px;
+  left: -45vw;
+  background-color: rgb(222, 218, 218);
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+.category__tag--nintendo {
+  background-color: rgb(222, 218, 218);
+  position: absolute;
+  left: -69px;
+  bottom: -2px;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 55px;
+  background-image: linear-gradient(20deg, #129631 0%, #07e0ec 100%);
+  z-index: 1;
+}
+.nav-footer {
+  position: sticky;
+  top: 5px;
+  margin: 0;
+  padding: 0;
+}
+.images {
+  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  position: relative;
+  list-style-type: none;
+  height: 20%;
+  gap: 20px;
 }
-.category__tag--html {
-  position: absolute;
-  left: 0;
-  background-color: rgb(197, 194, 194);
+.profile-img {
+  display: flex;
+  width: 150px;
+  border-radius: 50%;
 }
-.category__tag--flexbox {
-  background-color: rgb(197, 194, 194);
-  position: absolute;
-  left: 45px;
+.profile-name {
+  display: flex;
 }
-.category__tag--css {
-  background-color: rgb(197, 194, 194);
-  position: absolute;
-  left: 110px;
+
+.profile-details {
+  display: flex;
+  display-flex: row;
+  margin: 0;
+  align-items: center;
+  gap: 1rem;
 }
+/*.card__button:hover {
+  background: white;
+  color: #8413b9;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+} */
