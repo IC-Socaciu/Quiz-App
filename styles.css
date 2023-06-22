@@ -135,8 +135,20 @@ h1 {
   gap: 20px;
 }
 .profile-img {
+  display: flex;
   width: 150px;
   border-radius: 50%;
+}
+.profile-name {
+  display: flex;
+}
+
+.profile-details {
+  display: flex;
+  display-flex: row;
+  margin: 0;
+  align-items: center;
+  gap: 1rem;
 }
 /*.card__button:hover {
   background: white;
