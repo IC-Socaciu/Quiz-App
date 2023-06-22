@@ -134,7 +134,10 @@ h1 {
   height: 20%;
   gap: 20px;
 }
-
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+}
 /*.card__button:hover {
   background: white;
   color: #8413b9;
